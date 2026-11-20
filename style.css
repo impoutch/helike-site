@@ -16,3 +16,7 @@ a { color: var(--accent); }
 .platforms { color: var(--muted); }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
 .en { margin-top: 56px; }
+.toc { background: #f3eee2; border: 1px solid var(--line); padding: 12px 20px; margin: 20px 0; font-size: .95rem; }
+.toc ol { margin: 4px 0; }
+.k { font-family: system-ui, sans-serif; font-size: .9em; background: #f3eee2; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; white-space: nowrap; }
+.tip { border-left: 3px solid var(--accent); padding: 4px 12px; color: var(--muted); }

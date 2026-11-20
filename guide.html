@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helike — guide d'utilisation · user guide</title>
+<meta name="description" content="Guide d'utilisation d'Helike : installer, consigner ses recherches, retenir, exporter l'annexe, sauvegarder, accès hors campus.">
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <p class="lang"><a href="index.html">Helike</a><a href="#en" lang="en">English</a></p>
+  <h1>Guide d'utilisation</h1>
+  <p class="tag">Helike 0.19 · Firefox et Chrome</p>
+
+  <nav class="toc"><ol>
+    <li><a href="#installer">Installer Helike</a></li>
+    <li><a href="#chercher">Chercher : Helike consigne tout seul</a></li>
+    <li><a href="#retenir">Retenir les recherches à déclarer</a></li>
+    <li><a href="#journal">Le journal</a></li>
+    <li><a href="#ia">Outils d'IA : Consensus et LeapSpace</a></li>
+    <li><a href="#exporter">Exporter l'annexe</a></li>
+    <li><a href="#sauvegarder">Sauvegarder son journal</a></li>
+    <li><a href="#proxy">Hors campus : le proxy de la bibliothèque</a></li>
+    <li><a href="#limites">Limites à connaître</a></li>
+    <li><a href="#aide">Signaler un problème</a></li>
+  </ol></nav>
+
+  <h2 id="installer">1. Installer Helike</h2>
+  <ul>
+    <li>Installez Helike depuis la boutique de votre navigateur (Firefox ou Chrome), puis épinglez son icône (le livre bordeaux) dans la barre d'outils pour l'avoir sous la main.</li>
+    <li>Au premier lancement, un bandeau d'accueil explique le fonctionnement et propose une <strong>copie quotidienne</strong> du journal dans votre dossier Téléchargements/Helike. Nous la conseillons : désinstaller l'extension efface le journal.</li>
+    <li>Dans la fenêtre de l'icône (le « popup »), indiquez votre <strong>projet en cours</strong> (ex. « Revue — dysgraphie ») : chaque recherche y sera rattachée.</li>
+  </ul>
+
+  <h2 id="chercher">2. Chercher : Helike consigne tout seul</h2>
+  <ul>
+    <li>Lancez vos recherches normalement sur une plateforme prise en charge : Sofia (WorldCat Discovery), ProQuest, ERIC, PubMed, APA PsycNet, Google Scholar, Érudit, Cairn, HAL, theses.fr, Papyrus (Scholaris), Consensus, LeapSpace.</li>
+    <li>Helike note chaque recherche dès qu'elle s'affiche : équation, filtres, date, nombre de résultats et adresse de la page. Il n'y a rien à faire.</li>
+    <li>Ouvrez le popup pour voir ce qui a été noté pour la page en cours ; il se met à jour pendant que la page se charge.</li>
+    <li>Chaque filtre ajouté donne une nouvelle ligne dans le journal : vous gardez la trace de chaque étape. Une recherche remplacée très vite (en moins de 2 secondes, avant même que son nombre de résultats soit lu) n'est pas gardée : c'était une étape intermédiaire.</li>
+    <li>Vous préférez décider vous-même ? Décochez <span class="k">Capture automatique de chaque recherche</span> dans le popup : le bouton <span class="k">Consigner cette recherche</span> apparaît alors.</li>
+  </ul>
+
+  <h2 id="retenir">3. Retenir les recherches à déclarer</h2>
+  <ul>
+    <li>Les recherches notées automatiquement ont le statut <strong>À trier</strong>. Celles que vous déclarerez dans votre méthodologie passent à <strong>Retenue</strong>.</li>
+    <li>Depuis le popup : <span class="k">Retenir cette recherche</span>, avec une note facultative (pourquoi cette recherche, pertinence des résultats…). Depuis le journal : changez le statut dans la première colonne.</li>
+    <li>La ligne <strong>Résultats</strong> du journal additionne, pour chaque plateforme, la recherche retenue la plus récente : c'est le nombre de notices repérées par base, avant élimination des doublons.</li>
+  </ul>
+
+  <h2 id="journal">4. Le journal</h2>
+  <ul>
+    <li>Bouton <span class="k">Ouvrir le journal complet et les exports</span> dans le popup.</li>
+    <li>Filtres en haut : projet, statut, plateforme, et une recherche dans les équations et les notes.</li>
+    <li>Cliquer sur une équation relance la recherche sur la plateforme.</li>
+    <li>Les notes et le projet se modifient directement dans le tableau. Une même recherche relancée plus tard est repérée comme <em>relance</em>, avec l'écart du nombre de résultats.</li>
+    <li><span class="k">Supprimer ▾</span> efface les recherches à trier affichées, ou tout le journal ; la croix au bout d'une ligne supprime une seule recherche.</li>
+  </ul>
+
+  <h2 id="ia">5. Outils d'IA : Consensus et LeapSpace</h2>
+  <ul>
+    <li>Une entrée par question : la question, le mode (Consensus : Pro, Deep…), le nombre d'articles, et les requêtes que l'outil lance lui-même, avec leur source et leur nombre de résultats quand l'outil les affiche.</li>
+    <li><strong>Laissez l'onglet ouvert jusqu'à la fin de la réponse</strong> : les requêtes s'affichent pendant que l'outil travaille, et c'est à ce moment qu'Helike les lit.</li>
+    <li>Consensus : les filtres ne s'appliquent qu'à la première question d'une conversation. Helike les lit sur les pastilles affichées au-dessus de la question ; si Consensus en cache une partie (« +16 »), le détail vient du panneau <span class="k">Filter</span> tel que vous l'avez rempli.</li>
+    <li>Helike lit seulement ce qui est affiché à l'écran : il n'envoie aucune requête à ces services, conformément à leurs conditions d'utilisation. Ces recherches ont leur propre section dans l'annexe et ne comptent pas dans la ligne Résultats.</li>
+  </ul>
+
+  <h2 id="exporter">6. Exporter l'annexe</h2>
+  <ul>
+    <li><span class="k">Exporter ▾</span> exporte <strong>ce qui est affiché</strong> : filtrez d'abord (ex. projet + statut « Retenues »).</li>
+    <li><strong>Word</strong> : annexe prête à insérer dans un mémoire, une thèse ou un article — sommaire, nombre de notices par base, détail de chaque recherche. Elle reprend les éléments PRISMA-S sur les bases et les stratégies de recherche (items 1, 8, 9, 13 et 15).</li>
+    <li><strong>PDF</strong> : la même annexe s'ouvre dans un onglet ; faites <span class="k">Ctrl+P</span> (ou Cmd+P), puis « Enregistrer au format PDF ».</li>
+    <li><strong>CSV</strong> : tableau à ouvrir dans Excel ou un autre tableur.</li>
+  </ul>
+
+  <h2 id="sauvegarder">7. Sauvegarder son journal</h2>
+  <ul>
+    <li>Le journal est gardé dans votre navigateur seulement. Désinstaller Helike l'efface.</li>
+    <li><span class="k">Sauvegarde ▾</span> → <span class="k">Sauvegarder tout le journal</span> crée un fichier .json ; <span class="k">Restaurer une sauvegarde</span> le réimporte (les recherches déjà présentes sont conservées). C'est aussi la façon de passer son journal d'un ordinateur ou d'un navigateur à l'autre.</li>
+    <li><span class="k">Sauvegarde automatique quotidienne</span> : une copie par jour dans Téléchargements/Helike, seulement si le journal a changé ; les 30 plus récentes sont gardées. Ce fichier n'est pas chiffré : il est lisible par quiconque a accès à votre ordinateur.</li>
+  </ul>
+
+  <h2 id="proxy">8. Hors campus : le proxy de la bibliothèque</h2>
+  <ul>
+    <li>Hors campus, beaucoup de bibliothèques donnent accès aux bases payantes par un proxy (EZproxy) qui change l'adresse du site (ex. <code>www-proquest-com.ezproxy.univ.ca</code>).</li>
+    <li>Sur une page passée par le proxy, ouvrez le popup : Helike affiche le domaine détecté et propose <span class="k">Autoriser Helike sur ce proxy</span>. Vérifiez qu'il s'agit bien du proxy de votre bibliothèque, acceptez, puis rechargez la page.</li>
+    <li>Autre possibilité : menu <span class="k">Hors campus ▾</span> du journal, où l'on colle le domaine du proxy. Ce menu liste aussi les proxys autorisés, avec un bouton pour les retirer.</li>
+    <li>L'adresse notée dans le journal est celle du site d'origine, utilisable par n'importe qui.</li>
+  </ul>
+
+  <h2 id="limites">9. Limites à connaître</h2>
+  <ul>
+    <li>Helike lit les pages des plateformes ; si l'une d'elles change son interface, le nombre de résultats peut ne plus être détecté (« non détecté ») le temps d'une mise à jour.</li>
+    <li>Google Scholar donne un nombre approximatif (« environ ») : il est marqué « approx. ».</li>
+    <li>Les recherches sur les outils d'IA ne sont pas reproductibles à l'identique : l'annexe le signale.</li>
+  </ul>
+
+  <h2 id="aide">10. Signaler un problème</h2>
+  <p>Écrivez à <a href="mailto:contact@helike.ca">contact@helike.ca</a> en indiquant la plateforme, ce que vous avez fait, ce que le journal a noté, et si possible une capture d'écran. N'envoyez pas votre sauvegarde complète : elle contient tout votre historique de recherche.</p>
+
+  <section class="en" id="en" lang="en">
+    <h1>User guide</h1>
+    <p class="tag">Helike 0.19 · Firefox and Chrome</p>
+
+    <h2>1. Install Helike</h2>
+    <ul>
+      <li>Install Helike from your browser's store (Firefox or Chrome), then pin its icon (the burgundy book) to the toolbar.</li>
+      <li>On first launch, a welcome banner explains how it works and offers a <strong>daily copy</strong> of the log in Downloads/Helike. We recommend it: uninstalling the extension erases the log.</li>
+      <li>In the icon's window (the popup), enter your <strong>current project</strong> (e.g. “Review — dysgraphia”): every search will be attached to it.</li>
+    </ul>
+
+    <h2>2. Search: Helike logs automatically</h2>
+    <ul>
+      <li>Search as usual on a supported platform: Sofia (WorldCat Discovery), ProQuest, ERIC, PubMed, APA PsycNet, Google Scholar, Érudit, Cairn, HAL, theses.fr, Papyrus (Scholaris), Consensus, LeapSpace.</li>
+      <li>Helike records each search as soon as it is displayed: search string, filters, date, result count and page address. Nothing to do.</li>
+      <li>Open the popup to see what was recorded for the current page; it updates while the page loads.</li>
+      <li>Each filter you add creates a new line in the log, so every step is kept. A search replaced within 2 seconds, before its result count is read, is not kept: it was an intermediate step.</li>
+      <li>Prefer to decide yourself? Untick <span class="k">Automatically capture every search</span> in the popup: the <span class="k">Log this search</span> button then appears.</li>
+    </ul>
+
+    <h2>3. Mark the searches to report</h2>
+    <ul>
+      <li>Automatically recorded searches are <strong>To review</strong>. Those you will report in your methodology become <strong>Final</strong>.</li>
+      <li>From the popup: <span class="k">Mark this search as final</span>, with an optional note. From the log: change the status in the first column.</li>
+      <li>The log's <strong>Results</strong> line adds up, for each platform, the most recent final search: the number of records identified per database, before removing duplicates.</li>
+    </ul>
+
+    <h2>4. The log</h2>
+    <ul>
+      <li><span class="k">Open the full log and exports</span> in the popup.</li>
+      <li>Filters at the top: project, status, platform, and a search in search strings and notes.</li>
+      <li>Click a search string to run the search again on the platform.</li>
+      <li>Notes and project are edited directly in the table. The same search run again later is flagged as a <em>rerun</em>, with the change in result count.</li>
+      <li><span class="k">Delete ▾</span> removes the displayed searches to review, or the whole log; the cross at the end of a line deletes one search.</li>
+    </ul>
+
+    <h2>5. AI tools: Consensus and LeapSpace</h2>
+    <ul>
+      <li>One entry per question: the question, the mode (Consensus: Pro, Deep…), the number of papers, and the queries the tool runs itself, with their source and result count when the tool shows them.</li>
+      <li><strong>Keep the tab open until the answer is complete</strong>: the queries are shown while the tool works, and that is when Helike reads them.</li>
+      <li>Consensus applies filters to the first question of a conversation only. Helike reads them from the tags shown above the question; if Consensus hides some (“+16”), the details come from the <span class="k">Filter</span> panel as you filled it in.</li>
+      <li>Helike only reads what is shown on screen: it sends no request to these services, in line with their terms of use. These searches have their own section in the appendix and do not count in the Results line.</li>
+    </ul>
+
+    <h2>6. Export the appendix</h2>
+    <ul>
+      <li><span class="k">Export ▾</span> exports <strong>what is displayed</strong>: filter first (e.g. project + status “Final”).</li>
+      <li><strong>Word</strong>: an appendix ready for a thesis or article — summary, records per database, details of each search. It covers the PRISMA-S items on databases and search strategies (items 1, 8, 9, 13 and 15).</li>
+      <li><strong>PDF</strong>: the same appendix opens in a tab; press <span class="k">Ctrl+P</span> (or Cmd+P), then “Save as PDF”.</li>
+      <li><strong>CSV</strong>: a table for Excel or any spreadsheet.</li>
+    </ul>
+
+    <h2>7. Back up your log</h2>
+    <ul>
+      <li>The log is kept in your browser only. Uninstalling Helike erases it.</li>
+      <li><span class="k">Backup ▾</span> → <span class="k">Back up the whole log</span> creates a .json file; <span class="k">Restore a backup</span> imports it again (searches already in the log are kept). This is also how to move your log to another computer or browser.</li>
+      <li><span class="k">Daily automatic backup</span>: one copy a day in Downloads/Helike, only if the log changed; the 30 most recent are kept. This file is not encrypted: anyone with access to your computer can read it.</li>
+    </ul>
+
+    <h2>8. Off campus: your library's proxy</h2>
+    <ul>
+      <li>Off campus, many libraries give access to subscription databases through a proxy (EZproxy) that changes the site's address (e.g. <code>www-proquest-com.ezproxy.univ.edu</code>).</li>
+      <li>On a page served through the proxy, open the popup: Helike shows the detected domain and offers <span class="k">Allow Helike on this proxy</span>. Check that it is your library's proxy, accept, then reload the page.</li>
+      <li>Alternatively, use the log's <span class="k">Off campus ▾</span> menu and paste the proxy domain. This menu also lists allowed proxies, with a button to remove them.</li>
+      <li>The address saved in the log is the original site's address, usable by anyone.</li>
+    </ul>
+
+    <h2>9. Known limits</h2>
+    <ul>
+      <li>Helike reads the platforms' pages; if one changes its interface, the result count may show as “not detected” until an update.</li>
+      <li>Google Scholar gives an approximate count (“about”): it is marked “approx.”.</li>
+      <li>Searches with AI tools cannot be reproduced exactly: the appendix says so.</li>
+    </ul>
+
+    <h2>10. Report a problem</h2>
+    <p>Write to <a href="mailto:contact@helike.ca">contact@helike.ca</a> with the platform, what you did, what the log recorded, and a screenshot if possible. Do not send your full backup: it contains your whole search history.</p>
+  </section>
+
+  <footer>© 2026 Helike. Tous droits réservés · All rights reserved.</footer>
+</main>
+</body>
+</html>
