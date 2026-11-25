@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Helike — guide d'utilisation · user guide</title>
-<meta name="description" content="Guide d'utilisation d'Helike : installer, consigner ses recherches, retenir, exporter l'annexe, sauvegarder, accès hors campus.">
+<meta name="description" content="Guide d'utilisation d'Helike : installer, consigner ses recherches, marquer les recherches finales, exporter l'annexe, sauvegarder, accès hors campus.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,12 +12,12 @@
 <main>
   <p class="lang"><a href="index.html">Helike</a><a href="#en" lang="en">English</a></p>
   <h1>Guide d'utilisation</h1>
-  <p class="tag">Helike 0.19 · Firefox et Chrome</p>
+  <p class="tag">Helike 0.20 · Firefox et Chrome</p>
 
   <nav class="toc"><ol>
     <li><a href="#installer">Installer Helike</a></li>
     <li><a href="#chercher">Chercher : Helike consigne tout seul</a></li>
-    <li><a href="#retenir">Retenir les recherches à déclarer</a></li>
+    <li><a href="#retenir">Marquer les recherches finales</a></li>
     <li><a href="#journal">Le journal</a></li>
     <li><a href="#ia">Outils d'IA : Consensus et LeapSpace</a></li>
     <li><a href="#exporter">Exporter l'annexe</a></li>
@@ -30,8 +30,8 @@
   <h2 id="installer">1. Installer Helike</h2>
   <ul>
     <li>Installez Helike depuis la boutique de votre navigateur (Firefox ou Chrome), puis épinglez son icône (le livre bordeaux) dans la barre d'outils pour l'avoir sous la main.</li>
-    <li>Au premier lancement, un bandeau d'accueil explique le fonctionnement et propose une <strong>copie quotidienne</strong> du journal dans votre dossier Téléchargements/Helike. Nous la conseillons : désinstaller l'extension efface le journal.</li>
-    <li>Dans la fenêtre de l'icône (le «&nbsp;popup&nbsp;»), indiquez votre <strong>projet en cours</strong> (ex. «&nbsp;Revue — dysgraphie&nbsp;») : chaque recherche y sera rattachée.</li>
+    <li>Au premier lancement, un bandeau d'accueil vous demande de nommer votre <strong>projet</strong> (ex. «&nbsp;Thèse – revue de littérature&nbsp;») : chaque recherche y sera rangée. Helike ne consigne rien tant qu'il n'y a pas de projet.</li>
+    <li>Pour changer de projet ou en créer un autre, cliquez sur son nom, dans le journal ou dans la fenêtre de l'icône (le «&nbsp;popup&nbsp;»).</li>
   </ul>
 
   <h2 id="chercher">2. Chercher : Helike consigne tout seul</h2>
@@ -40,23 +40,23 @@
     <li>Helike note chaque recherche dès qu'elle s'affiche : équation, filtres, date, nombre de résultats et adresse de la page. Il n'y a rien à faire.</li>
     <li>Ouvrez le popup pour voir ce qui a été noté pour la page en cours ; il se met à jour pendant que la page se charge.</li>
     <li>Chaque filtre ajouté donne une nouvelle ligne dans le journal : vous gardez la trace de chaque étape. Une recherche remplacée très vite (en moins de 2 secondes, avant même que son nombre de résultats soit lu) n'est pas gardée : c'était une étape intermédiaire.</li>
-    <li>Vous préférez décider vous-même ? Décochez <span class="k">Capture automatique de chaque recherche</span> dans le popup : le bouton <span class="k">Consigner cette recherche</span> apparaît alors.</li>
+    <li>Une recherche sans rapport avec votre projet ? Cliquez sur l'icône <span class="k">pause</span> en haut du popup : les recherches lancées pendant la pause ne sont pas consignées, même après la reprise. La pause se lève d'elle-même à la fermeture du navigateur.</li>
   </ul>
 
-  <h2 id="retenir">3. Retenir les recherches à déclarer</h2>
+  <h2 id="retenir">3. Marquer les recherches finales</h2>
   <ul>
-    <li>Les recherches notées automatiquement ont le statut <strong>À trier</strong>. Celles que vous déclarerez dans votre méthodologie passent à <strong>Retenue</strong>.</li>
-    <li>Depuis le popup : <span class="k">Retenir cette recherche</span>, avec une note facultative (pourquoi cette recherche, pertinence des résultats…). Depuis le journal : changez le statut dans la première colonne.</li>
-    <li>La ligne <strong>Résultats</strong> du journal additionne, pour chaque plateforme, la recherche retenue la plus récente : c'est le nombre de notices repérées par base, avant élimination des doublons.</li>
+    <li>Toutes vos recherches sont consignées, y compris les étapes intermédiaires. Celles que vous déclarerez dans votre méthodologie, marquez-les d'une étoile : <span class="k">★ Recherche finale</span>.</li>
+    <li>Depuis le popup : <span class="k">Marquer comme recherche finale</span> ; <span class="k">+ Ajouter une note</span> permet de noter pourquoi cette recherche, la pertinence des résultats… Depuis le journal : cliquez sur l'étoile de la première colonne.</li>
+    <li>La ligne <strong>Résultats</strong> du journal additionne, pour chaque plateforme, les recherches finales : c'est le nombre de notices repérées par base, avant élimination des doublons. Si deux recherches finales d'une même base ont la même équation (une version filtrée et une version élargie, par exemple), Helike vous prévient : elles se recoupent et certains résultats seraient comptés deux fois.</li>
   </ul>
 
   <h2 id="journal">4. Le journal</h2>
   <ul>
-    <li>Bouton <span class="k">Ouvrir le journal complet et les exports</span> dans le popup.</li>
-    <li>Filtres en haut : projet, statut, plateforme, et une recherche dans les équations et les notes.</li>
+    <li>Bouton <span class="k">Ouvrir le journal</span> dans le popup.</li>
+    <li>Filtres en haut : projet, recherches finales, plateforme, et une recherche dans les équations et les notes.</li>
     <li>Cliquer sur une équation relance la recherche sur la plateforme.</li>
     <li>Les notes et le projet se modifient directement dans le tableau. Une même recherche relancée plus tard est repérée comme <em>relance</em>, avec l'écart du nombre de résultats.</li>
-    <li><span class="k">Supprimer ▾</span> efface les recherches à trier affichées, ou tout le journal ; la croix au bout d'une ligne supprime une seule recherche.</li>
+    <li>La croix au bout d'une ligne supprime une seule recherche ; <span class="k">Vider le journal</span> efface tout le journal (et le projet en cours).</li>
   </ul>
 
   <h2 id="ia">5. Outils d'IA : Consensus et LeapSpace</h2>
@@ -69,7 +69,7 @@
 
   <h2 id="exporter">6. Exporter l'annexe</h2>
   <ul>
-    <li><span class="k">Exporter ▾</span> exporte <strong>ce qui est affiché</strong> : filtrez d'abord (ex. projet + statut «&nbsp;Retenues&nbsp;»).</li>
+    <li><span class="k">Exporter ▾</span> exporte <strong>ce qui est affiché</strong> : filtrez d'abord (ex. projet + «&nbsp;Recherches finales&nbsp;»).</li>
     <li><strong>Word</strong> : annexe prête à insérer dans un mémoire, une thèse ou un article — sommaire, nombre de notices par base, détail de chaque recherche. Elle reprend les éléments PRISMA-S sur les bases et les stratégies de recherche (items 1, 8, 9, 13 et 15).</li>
     <li><strong>PDF</strong> : la même annexe s'ouvre dans un onglet ; faites <span class="k">Ctrl+P</span> (ou Cmd+P), puis «&nbsp;Enregistrer au format PDF&nbsp;».</li>
     <li><strong>CSV</strong> : tableau à ouvrir dans Excel ou un autre tableur.</li>
@@ -77,9 +77,10 @@
 
   <h2 id="sauvegarder">7. Sauvegarder son journal</h2>
   <ul>
-    <li>Le journal est gardé dans votre navigateur seulement. Désinstaller Helike l'efface.</li>
-    <li><span class="k">Sauvegarde ▾</span> → <span class="k">Sauvegarder tout le journal</span> crée un fichier .json ; <span class="k">Restaurer une sauvegarde</span> le réimporte (les recherches déjà présentes sont conservées). C'est aussi la façon de passer son journal d'un ordinateur ou d'un navigateur à l'autre.</li>
-    <li><span class="k">Sauvegarde automatique quotidienne</span> : une copie par jour dans Téléchargements/Helike, seulement si le journal a changé ; les 30 plus récentes sont gardées. Ce fichier n'est pas chiffré : il est lisible par quiconque a accès à votre ordinateur.</li>
+    <li>Le journal est gardé dans votre navigateur seulement. Désinstaller Helike, changer de navigateur ou d'ordinateur : le journal ne suit pas.</li>
+    <li><span class="k">Sauvegarde ▾</span> → <span class="k">Sauvegarder tout le journal</span> crée un fichier .json dans votre dossier de téléchargements ; <span class="k">Restaurer une sauvegarde</span> le réimporte (les recherches déjà présentes sont conservées). C'est aussi la façon de passer son journal d'un ordinateur ou d'un navigateur à l'autre.</li>
+    <li>La date de la dernière sauvegarde s'affiche à côté du bouton <span class="k">Sauvegarde</span>. Si des recherches ne sont dans aucune sauvegarde depuis plus d'une semaine, un rappel s'affiche dans le journal.</li>
+    <li>Le fichier n'est pas chiffré : il est lisible par quiconque a accès à votre ordinateur.</li>
   </ul>
 
   <h2 id="proxy">8. Hors campus : le proxy de la bibliothèque</h2>
@@ -102,13 +103,13 @@
 
   <section class="en" id="en" lang="en">
     <h1>User guide</h1>
-    <p class="tag">Helike 0.19 · Firefox and Chrome</p>
+    <p class="tag">Helike 0.20 · Firefox and Chrome</p>
 
     <h2>1. Install Helike</h2>
     <ul>
       <li>Install Helike from your browser's store (Firefox or Chrome), then pin its icon (the burgundy book) to the toolbar.</li>
-      <li>On first launch, a welcome banner explains how it works and offers a <strong>daily copy</strong> of the log in Downloads/Helike. We recommend it: uninstalling the extension erases the log.</li>
-      <li>In the icon's window (the popup), enter your <strong>current project</strong> (e.g. “Review — dysgraphia”): every search will be attached to it.</li>
+      <li>On first launch, a welcome banner asks you to name your <strong>project</strong> (e.g. “Thesis – literature review”): every search will be filed under it. Helike records nothing until a project exists.</li>
+      <li>To switch projects or create another one, click its name, in the log or in the icon's window (the popup).</li>
     </ul>
 
     <h2>2. Search: Helike logs automatically</h2>
@@ -117,23 +118,23 @@
       <li>Helike records each search as soon as it is displayed: search string, filters, date, result count and page address. Nothing to do.</li>
       <li>Open the popup to see what was recorded for the current page; it updates while the page loads.</li>
       <li>Each filter you add creates a new line in the log, so every step is kept. A search replaced within 2 seconds, before its result count is read, is not kept: it was an intermediate step.</li>
-      <li>Prefer to decide yourself? Untick <span class="k">Automatically capture every search</span> in the popup: the <span class="k">Log this search</span> button then appears.</li>
+      <li>A search unrelated to your project? Click the <span class="k">pause</span> icon at the top of the popup: searches run while paused are not logged, even after you resume. The pause lifts by itself when the browser closes.</li>
     </ul>
 
-    <h2>3. Mark the searches to report</h2>
+    <h2>3. Mark your final searches</h2>
     <ul>
-      <li>Automatically recorded searches are <strong>To review</strong>. Those you will report in your methodology become <strong>Final</strong>.</li>
-      <li>From the popup: <span class="k">Mark this search as final</span>, with an optional note. From the log: change the status in the first column.</li>
-      <li>The log's <strong>Results</strong> line adds up, for each platform, the most recent final search: the number of records identified per database, before removing duplicates.</li>
+      <li>All your searches are logged, intermediate steps included. Star the ones you will report in your methodology: <span class="k">★ Final search</span>.</li>
+      <li>From the popup: <span class="k">Mark as final search</span>; <span class="k">+ Add a note</span> lets you note why this search, how relevant the results are… From the log: click the star in the first column.</li>
+      <li>The log's <strong>Results</strong> line adds up, for each platform, the final searches: the number of records identified per database, before removing duplicates. If two final searches on the same database use the same query (a filtered and a broader version, for example), Helike warns you: they overlap and some results would be counted twice.</li>
     </ul>
 
     <h2>4. The log</h2>
     <ul>
-      <li><span class="k">Open the full log and exports</span> in the popup.</li>
-      <li>Filters at the top: project, status, platform, and a search in search strings and notes.</li>
+      <li><span class="k">Open the log</span> in the popup.</li>
+      <li>Filters at the top: project, final searches, platform, and a search in search strings and notes.</li>
       <li>Click a search string to run the search again on the platform.</li>
       <li>Notes and project are edited directly in the table. The same search run again later is flagged as a <em>rerun</em>, with the change in result count.</li>
-      <li><span class="k">Delete ▾</span> removes the displayed searches to review, or the whole log; the cross at the end of a line deletes one search.</li>
+      <li>The cross at the end of a line deletes one search; <span class="k">Clear the log</span> erases the whole log (and the current project).</li>
     </ul>
 
     <h2>5. AI tools: Consensus and LeapSpace</h2>
@@ -146,7 +147,7 @@
 
     <h2>6. Export the appendix</h2>
     <ul>
-      <li><span class="k">Export ▾</span> exports <strong>what is displayed</strong>: filter first (e.g. project + status “Final”).</li>
+      <li><span class="k">Export ▾</span> exports <strong>what is displayed</strong>: filter first (e.g. project + “Final searches”).</li>
       <li><strong>Word</strong>: an appendix ready for a thesis or article — summary, records per database, details of each search. It covers the PRISMA-S items on databases and search strategies (items 1, 8, 9, 13 and 15).</li>
       <li><strong>PDF</strong>: the same appendix opens in a tab; press <span class="k">Ctrl+P</span> (or Cmd+P), then “Save as PDF”.</li>
       <li><strong>CSV</strong>: a table for Excel or any spreadsheet.</li>
@@ -154,9 +155,10 @@
 
     <h2>7. Back up your log</h2>
     <ul>
-      <li>The log is kept in your browser only. Uninstalling Helike erases it.</li>
-      <li><span class="k">Backup ▾</span> → <span class="k">Back up the whole log</span> creates a .json file; <span class="k">Restore a backup</span> imports it again (searches already in the log are kept). This is also how to move your log to another computer or browser.</li>
-      <li><span class="k">Daily automatic backup</span>: one copy a day in Downloads/Helike, only if the log changed; the 30 most recent are kept. This file is not encrypted: anyone with access to your computer can read it.</li>
+      <li>The log is kept in your browser only. Uninstalling Helike, switching browsers or computers: the log does not follow.</li>
+      <li><span class="k">Backup ▾</span> → <span class="k">Back up the whole log</span> creates a .json file in your downloads folder; <span class="k">Restore a backup</span> imports it again (searches already in the log are kept). This is also how to move your log to another computer or browser.</li>
+      <li>The date of the last backup is shown next to the <span class="k">Backup</span> button. If some searches have been in no backup for over a week, a reminder appears in the log.</li>
+      <li>The file is not encrypted: anyone with access to your computer can read it.</li>
     </ul>
 
     <h2>8. Off campus: your library's proxy</h2>
