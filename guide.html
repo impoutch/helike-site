@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Helike — guide d'utilisation · user guide</title>
-<meta name="description" content="Guide d'utilisation d'Helike : installer, consigner ses recherches, marquer les recherches finales, exporter l'annexe, sauvegarder, accès hors campus.">
+<meta name="description" content="Guide d'utilisation d'Helike : installer, consigner ses recherches, marquer les recherches finales, épingler des textes pour Zotero, exporter l'annexe, sauvegarder, accès hors campus.">
 <link rel="icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +12,14 @@
 <main>
   <p class="lang"><a href="index.html">Helike</a><a href="#en" lang="en">English</a></p>
   <h1>Guide d'utilisation</h1>
-  <p class="tag">Helike 0.20 · Firefox et Chrome</p>
+  <p class="tag">Helike 0.21 · Firefox et Chrome</p>
 
   <nav class="toc"><ol>
     <li><a href="#installer">Installer Helike</a></li>
     <li><a href="#chercher">Chercher : Helike consigne tout seul</a></li>
     <li><a href="#retenir">Marquer les recherches finales</a></li>
     <li><a href="#journal">Le journal</a></li>
+    <li><a href="#epingler">Épingler des textes et les envoyer vers Zotero</a></li>
     <li><a href="#ia">Outils d'IA : Consensus et LeapSpace</a></li>
     <li><a href="#exporter">Exporter l'annexe</a></li>
     <li><a href="#sauvegarder">Sauvegarder son journal</a></li>
@@ -31,7 +32,7 @@
   <ul>
     <li>Installez Helike depuis la boutique de votre navigateur (Firefox ou Chrome), puis épinglez son icône (le livre bordeaux) dans la barre d'outils pour l'avoir sous la main.</li>
     <li>Au premier lancement, un bandeau d'accueil vous demande de créer votre premier <strong>projet</strong> (ex. «&nbsp;Thèse – revue de littérature&nbsp;») : chaque recherche est consignée dans le projet actif. Helike ne consigne rien tant qu'il n'y a pas de projet.</li>
-    <li>Pour changer de projet ou en créer un autre, cliquez sur son nom, dans le journal ou dans la fenêtre de l'icône (le «&nbsp;popup&nbsp;»).</li>
+    <li>Pour changer de projet ou en créer un autre, cliquez sur la pastille <span class="k">Projet actif</span>, dans le journal ou dans la fenêtre de l'icône (le «&nbsp;popup&nbsp;») : la liste de vos projets s'ouvre, avec <span class="k">Nouveau projet…</span> en bas.</li>
   </ul>
 
   <h2 id="chercher">2. Chercher : Helike consigne tout seul</h2>
@@ -53,13 +54,27 @@
   <h2 id="journal">4. Le journal</h2>
   <ul>
     <li>Bouton <span class="k">Ouvrir le journal</span> dans le popup.</li>
+    <li>Deux onglets : <span class="k">Recherches</span> et <span class="k">Textes épinglés</span> (voir la section suivante).</li>
     <li>Filtres en haut : projet, recherches finales, plateforme, et une recherche dans les équations et les notes.</li>
     <li>Cliquer sur une équation relance la recherche sur la plateforme.</li>
-    <li>Les notes et le projet se modifient directement dans le tableau. Une même recherche relancée plus tard est repérée comme <em>relance</em>, avec l'écart du nombre de résultats.</li>
+    <li>Une note se trouve sous l'équation : <span class="k">+ note</span>, puis Entrée pour l'enregistrer (Maj+Entrée pour aller à la ligne). Le projet d'une recherche se modifie directement dans le tableau. Une même recherche relancée plus tard est repérée comme <em>relance</em>, avec l'écart du nombre de résultats.</li>
+    <li>La colonne marquée d'une épingle indique combien de textes ont été épinglés depuis chaque recherche.</li>
     <li>La croix au bout d'une ligne supprime une seule recherche ; <span class="k">Vider le journal</span> efface tout le journal (et le projet actif).</li>
   </ul>
 
-  <h2 id="ia">5. Outils d'IA : Consensus et LeapSpace</h2>
+  <h2 id="epingler">5. Épingler des textes et les envoyer vers Zotero</h2>
+  <ul>
+    <li>Sur la page d'un article (ou d'un livre, d'une thèse, d'un chapitre), ouvrez le popup : Helike affiche le titre, les auteurs, l'année et la revue qu'il a lus dans la page. Cliquez sur <span class="k">Épingler ce texte</span>. Ça marche sur les plateformes prises en charge comme chez les éditeurs (Wiley, Sage, MDPI…).</li>
+    <li>Helike note d'où vient le texte : la recherche faite dans cet onglet, ou dans l'onglet d'où vous l'avez ouvert. Sinon, il le rattache à la dernière recherche du projet et l'indique.</li>
+    <li>Un même texte trouvé par deux recherches n'est gardé qu'une fois, avec ses deux provenances. Si une information manque dans la page (auteurs, année), le popup le signale en orange. Sur ProQuest, épinglez depuis l'onglet «&nbsp;Résumé&nbsp;» ou «&nbsp;Détails&nbsp;» plutôt que depuis le texte intégral.</li>
+    <li>L'onglet <span class="k">Textes épinglés</span> du journal les liste, avec leur provenance et leur statut d'export. La croix retire un texte.</li>
+    <li><span class="k">Exporter ▾</span> → <span class="k">Textes épinglés · RIS</span> : <span class="k">Nouveaux textes</span> (pas encore exportés) ou <span class="k">Tous les textes</span>. Le fichier .ris porte le nom du projet, de la date et de l'heure.</li>
+    <li>Importez le fichier dans votre gestionnaire de références (Zotero, EndNote, Mendeley…), dans une nouvelle collection pour garder vos textes à part. Dans Zotero : <span class="k">Fichier › Importer…</span>, puis <strong>cochez «&nbsp;Placer les collections et les documents importés dans une nouvelle collection&nbsp;»</strong> (la case est décochée par défaut). Vos textes arrivent dans une collection qui porte le nom du fichier, avec leur provenance en note.</li>
+    <li>Exportez plutôt les <em>nouveaux</em> textes à chaque fois : réimporter tout le lot créerait des doublons dans Zotero.</li>
+    <li>Épingler n'est pas inclure : ce sont des textes mis de côté pour le tri, qui se fait ensuite dans Zotero.</li>
+  </ul>
+
+  <h2 id="ia">6. Outils d'IA : Consensus et LeapSpace</h2>
   <ul>
     <li>Une entrée par question : la question, le mode (Consensus : Pro, Deep…), le nombre d'articles, et les requêtes que l'outil lance lui-même, avec leur source et leur nombre de résultats quand l'outil les affiche.</li>
     <li><strong>Laissez l'onglet ouvert jusqu'à la fin de la réponse</strong> : les requêtes s'affichent pendant que l'outil travaille, et c'est à ce moment qu'Helike les lit.</li>
@@ -67,23 +82,24 @@
     <li>Helike lit seulement ce qui est affiché à l'écran : il n'envoie aucune requête à ces services, conformément à leurs conditions d'utilisation. Ces recherches ont leur propre section dans l'annexe et ne comptent pas dans la ligne Résultats.</li>
   </ul>
 
-  <h2 id="exporter">6. Exporter l'annexe</h2>
+  <h2 id="exporter">7. Exporter l'annexe</h2>
   <ul>
     <li><span class="k">Exporter ▾</span> exporte <strong>ce qui est affiché</strong> : filtrez d'abord (ex. projet + «&nbsp;Recherches finales&nbsp;»).</li>
-    <li><strong>Word</strong> : annexe prête à insérer dans un mémoire, une thèse ou un article — sommaire, nombre de résultats par plateforme, détail de chaque recherche. Elle reprend les éléments PRISMA-S sur les bases et les stratégies de recherche (items 1, 8, 9, 13 et 15).</li>
+    <li><strong>Word</strong> : annexe prête à insérer dans un mémoire, une thèse ou un article — sommaire, nombre de résultats par plateforme, détail de chaque recherche, et liste des textes épinglés avec la recherche qui les a fait trouver. Elle reprend les éléments PRISMA-S sur les bases et les stratégies de recherche (items 1, 8, 9, 13 et 15).</li>
     <li><strong>PDF</strong> : la fenêtre d'impression s'ouvre directement ; choisissez «&nbsp;Enregistrer au format PDF&nbsp;».</li>
     <li><strong>CSV</strong> : tableau à ouvrir dans Excel ou un autre tableur.</li>
   </ul>
 
-  <h2 id="sauvegarder">7. Sauvegarder son journal</h2>
+  <h2 id="sauvegarder">8. Sauvegarder son journal</h2>
   <ul>
     <li>Le journal est gardé dans votre navigateur seulement. Désinstaller Helike, changer de navigateur ou d'ordinateur : le journal ne suit pas.</li>
     <li><span class="k">Sauvegarde ▾</span> → <span class="k">Sauvegarder tout le journal</span> crée un fichier .json dans votre dossier de téléchargements ; <span class="k">Restaurer une sauvegarde</span> le réimporte (les recherches déjà présentes sont conservées). C'est aussi la façon de passer son journal d'un ordinateur ou d'un navigateur à l'autre.</li>
     <li>La date de la dernière sauvegarde est indiquée dans le menu <span class="k">Sauvegarde</span>. Si des recherches ne sont dans aucune sauvegarde depuis plus d'une semaine, un rappel s'affiche dans le journal.</li>
+    <li>La sauvegarde contient aussi vos textes épinglés.</li>
     <li>Le fichier n'est pas chiffré : il est lisible par quiconque a accès à votre ordinateur.</li>
   </ul>
 
-  <h2 id="proxy">8. Hors campus : le proxy de la bibliothèque</h2>
+  <h2 id="proxy">9. Hors campus : le proxy de la bibliothèque</h2>
   <ul>
     <li>Hors campus, beaucoup de bibliothèques donnent accès aux bases payantes par un proxy (EZproxy) qui change l'adresse du site (ex. <code>www-proquest-com.ezproxy.univ.ca</code>).</li>
     <li>Sur une page passée par le proxy, ouvrez le popup : Helike affiche le domaine détecté et propose <span class="k">Autoriser Helike sur ce proxy</span>. Vérifiez qu'il s'agit bien du proxy de votre bibliothèque, acceptez, puis rechargez la page.</li>
@@ -91,25 +107,25 @@
     <li>L'adresse notée dans le journal est celle du site d'origine, utilisable par n'importe qui.</li>
   </ul>
 
-  <h2 id="limites">9. Limites à connaître</h2>
+  <h2 id="limites">10. Limites à connaître</h2>
   <ul>
     <li>Helike lit les pages des plateformes ; si l'une d'elles change son interface, le nombre de résultats peut ne plus être détecté («&nbsp;non détecté&nbsp;») le temps d'une mise à jour.</li>
     <li>Google Scholar donne un nombre approximatif («&nbsp;environ&nbsp;») : il est marqué «&nbsp;approx.&nbsp;».</li>
     <li>Les recherches sur les outils d'IA ne sont pas reproductibles à l'identique : l'annexe le signale.</li>
   </ul>
 
-  <h2 id="aide">10. Signaler un problème</h2>
+  <h2 id="aide">11. Signaler un problème</h2>
   <p>Le plus simple : le lien <span class="k">Une suggestion, un bug, une plateforme à ajouter&nbsp;? Écrivez-nous</span> en bas du popup et du journal, ou <a href="https://docs.google.com/forms/d/e/1FAIpQLSe7uaMrdlYzTh2SAk1WCn-XUjPD6K7WmzuD_Lf5RYGt21luvQ/viewform">ce formulaire</a> (deux questions). Pour joindre une capture d'écran, écrivez plutôt à <a href="mailto:contact@helike.ca">contact@helike.ca</a> en indiquant la plateforme, ce que vous avez fait et ce que le journal a noté. N'envoyez pas votre sauvegarde complète : elle contient tout votre historique de recherche.</p>
 
   <section class="en" id="en" lang="en">
     <h1>User guide</h1>
-    <p class="tag">Helike 0.20 · Firefox and Chrome</p>
+    <p class="tag">Helike 0.21 · Firefox and Chrome</p>
 
     <h2>1. Install Helike</h2>
     <ul>
       <li>Install Helike from your browser's store (Firefox or Chrome), then pin its icon (the burgundy book) to the toolbar.</li>
-      <li>On first launch, a welcome banner asks you to name your <strong>project</strong> (e.g. “Thesis – literature review”): every search will be filed under it. Helike records nothing until a project exists.</li>
-      <li>To switch projects or create another one, click its name, in the log or in the icon's window (the popup).</li>
+      <li>On first launch, a welcome banner asks you to name your <strong>project</strong> (e.g. “Thesis – literature review”): every search is logged in the active project. Helike records nothing until a project exists.</li>
+      <li>To switch projects or create another one, click the <span class="k">Active project</span> chip, in the log or in the icon's window (the popup): your projects are listed, with <span class="k">New project…</span> at the bottom.</li>
     </ul>
 
     <h2>2. Search: Helike logs automatically</h2>
@@ -125,19 +141,33 @@
     <ul>
       <li>All your searches are logged, intermediate steps included. Star the ones you will report in your methodology: <span class="k">★ Final search</span>.</li>
       <li>From the popup: <span class="k">Mark as final search</span>; <span class="k">+ Add a note</span> lets you note why this search, how relevant the results are… From the log: click the star in the first column.</li>
-      <li>The log's <strong>Results</strong> line adds up, for each platform, the final searches: the number of records identified per database, before removing duplicates. If two final searches on the same database use the same query (a filtered and a broader version, for example), Helike warns you: they overlap and some results would be counted twice.</li>
+      <li>The log's <strong>Results</strong> line adds up, for each platform, the final searches: the total results per platform, before removing duplicates. If two final searches on the same platform use the same query (a filtered and a broader version, for example), Helike warns you: they overlap and some results would be counted twice.</li>
     </ul>
 
     <h2>4. The log</h2>
     <ul>
       <li><span class="k">Open the log</span> in the popup.</li>
+      <li>Two tabs: <span class="k">Searches</span> and <span class="k">Pinned texts</span> (see the next section).</li>
       <li>Filters at the top: project, final searches, platform, and a search in search strings and notes.</li>
       <li>Click a search string to run the search again on the platform.</li>
-      <li>Notes and project are edited directly in the table. The same search run again later is flagged as a <em>rerun</em>, with the change in result count.</li>
-      <li>The cross at the end of a line deletes one search; <span class="k">Clear the log</span> erases the whole log (and the current project).</li>
+      <li>A note sits under the search string: <span class="k">+ note</span>, then Enter to save it (Shift+Enter for a new line). A search's project is edited directly in the table. The same search run again later is flagged as a <em>rerun</em>, with the change in result count.</li>
+      <li>The column marked with a pin shows how many texts were pinned from each search.</li>
+      <li>The cross at the end of a line deletes one search; <span class="k">Clear the log</span> erases the whole log (and the active project).</li>
     </ul>
 
-    <h2>5. AI tools: Consensus and LeapSpace</h2>
+    <h2>5. Pin texts and send them to Zotero</h2>
+    <ul>
+      <li>On the page of an article (or a book, thesis or chapter), open the popup: Helike shows the title, authors, year and journal it read on the page. Click <span class="k">Pin this text</span>. It works on supported platforms and on publisher sites (Wiley, Sage, MDPI…).</li>
+      <li>Helike notes where the text came from: the search run in that tab, or in the tab you opened it from. Otherwise it links it to the project's latest search and says so.</li>
+      <li>A text found by two searches is kept once, with both sources. If information is missing on the page (authors, year), the popup flags it in orange. On ProQuest, pin from the “Abstract” or “Details” view rather than the full text.</li>
+      <li>The log's <span class="k">Pinned texts</span> tab lists them, with their source and export status. The cross removes a text.</li>
+      <li><span class="k">Export ▾</span> → <span class="k">Pinned texts · RIS</span>: <span class="k">New texts</span> (not exported yet) or <span class="k">All texts</span>. The .ris file is named after the project, date and time.</li>
+      <li>Import the file into your reference manager (Zotero, EndNote, Mendeley…), in a new collection to keep your texts apart. In Zotero: <span class="k">File › Import…</span>, then <strong>tick “Place imported collections and items into new collection”</strong> (unticked by default). Your texts land in a collection named after the file, with their source as a note.</li>
+      <li>Export the <em>new</em> texts each time: importing the whole set again would create duplicates in Zotero.</li>
+      <li>Pinning is not including: these are texts set aside for screening, which happens afterwards in Zotero.</li>
+    </ul>
+
+    <h2>6. AI tools: Consensus and LeapSpace</h2>
     <ul>
       <li>One entry per question: the question, the mode (Consensus: Pro, Deep…), the number of papers, and the queries the tool runs itself, with their source and result count when the tool shows them.</li>
       <li><strong>Keep the tab open until the answer is complete</strong>: the queries are shown while the tool works, and that is when Helike reads them.</li>
@@ -145,23 +175,23 @@
       <li>Helike only reads what is shown on screen: it sends no request to these services, in line with their terms of use. These searches have their own section in the appendix and do not count in the Results line.</li>
     </ul>
 
-    <h2>6. Export the appendix</h2>
+    <h2>7. Export the appendix</h2>
     <ul>
       <li><span class="k">Export ▾</span> exports <strong>what is displayed</strong>: filter first (e.g. project + “Final searches”).</li>
-      <li><strong>Word</strong>: an appendix ready for a thesis or article — summary, results per platform, details of each search. It covers the PRISMA-S items on databases and search strategies (items 1, 8, 9, 13 and 15).</li>
+      <li><strong>Word</strong>: an appendix ready for a thesis or article — summary, results per platform, details of each search, and the pinned texts with the search that found them. It covers the PRISMA-S items on databases and search strategies (items 1, 8, 9, 13 and 15).</li>
       <li><strong>PDF</strong>: the print dialog opens directly; choose “Save as PDF”.</li>
       <li><strong>CSV</strong>: a table for Excel or any spreadsheet.</li>
     </ul>
 
-    <h2>7. Back up your log</h2>
+    <h2>8. Back up your log</h2>
     <ul>
       <li>The log is kept in your browser only. Uninstalling Helike, switching browsers or computers: the log does not follow.</li>
       <li><span class="k">Backup ▾</span> → <span class="k">Back up the whole log</span> creates a .json file in your downloads folder; <span class="k">Restore a backup</span> imports it again (searches already in the log are kept). This is also how to move your log to another computer or browser.</li>
-      <li>The date of the last backup is shown next to the <span class="k">Backup</span> button. If some searches have been in no backup for over a week, a reminder appears in the log.</li>
+      <li>The backup also contains your pinned texts. The date of the last backup is shown in the <span class="k">Backup</span> menu. If some searches have been in no backup for over a week, a reminder appears in the log.</li>
       <li>The file is not encrypted: anyone with access to your computer can read it.</li>
     </ul>
 
-    <h2>8. Off campus: your library's proxy</h2>
+    <h2>9. Off campus: your library's proxy</h2>
     <ul>
       <li>Off campus, many libraries give access to subscription databases through a proxy (EZproxy) that changes the site's address (e.g. <code>www-proquest-com.ezproxy.univ.edu</code>).</li>
       <li>On a page served through the proxy, open the popup: Helike shows the detected domain and offers <span class="k">Allow Helike on this proxy</span>. Check that it is your library's proxy, accept, then reload the page.</li>
@@ -169,14 +199,14 @@
       <li>The address saved in the log is the original site's address, usable by anyone.</li>
     </ul>
 
-    <h2>9. Known limits</h2>
+    <h2>10. Known limits</h2>
     <ul>
       <li>Helike reads the platforms' pages; if one changes its interface, the result count may show as “not detected” until an update.</li>
       <li>Google Scholar gives an approximate count (“about”): it is marked “approx.”.</li>
       <li>Searches with AI tools cannot be reproduced exactly: the appendix says so.</li>
     </ul>
 
-    <h2>10. Report a problem</h2>
+    <h2>11. Report a problem</h2>
     <p>The easiest way: the <span class="k">A suggestion, a bug, a platform to add? Write to us</span> link at the bottom of the popup and the log, or <a href="https://docs.google.com/forms/d/e/1FAIpQLSds3YNCCOYb06Co3VNR_ipqxJ22HIlTQAzhvXdJSnXeCwVnEw/viewform">this form</a> (two questions). To attach a screenshot, write to <a href="mailto:contact@helike.ca">contact@helike.ca</a> instead, with the platform, what you did and what the log recorded. Do not send your full backup: it contains your whole search history.</p>
   </section>
 
